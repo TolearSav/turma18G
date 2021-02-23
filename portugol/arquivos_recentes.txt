@@ -1,0 +1,6 @@
+C:\Users\Luana Savian\.portugol\para-pares.por
+C:\Users\Luana Savian\.portugol\para-numero-entre10.por
+C:\Users\Luana Savian\.portugol\para-com-para.por
+C:\Users\Luana Savian\.portugol\para-soma.por
+C:\Users\Luana Savian\.portugol\sequencia-fibonacci-para.por
+C:\Users\Luana Savian\.portugol\para-calculos.por
