@@ -1,0 +1,3 @@
+module projetoJava {
+	exports pacoteJava;
+}
