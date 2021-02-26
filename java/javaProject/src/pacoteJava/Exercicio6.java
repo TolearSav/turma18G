@@ -25,6 +25,9 @@ public class Exercicio6 {
 
 
 		System.out.println("Resultado da distancia: "+ forma.format(d));
+		
+		ler.close();
+
 	}
 
 }

@@ -20,6 +20,8 @@ public class Exercicio2 {
 		System.out.println("Ano[s]:" + idadeAnos);
 		System.out.println("Meses[s]:" + idadeMeses);
 		System.out.println("Dias[s]:" + idadeDias);
+		
+		ler.close();
 
 	}
 

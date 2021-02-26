@@ -30,6 +30,9 @@ public class Exercicio7 {
 
 		System.out.println("Valor de x: " + forma.format(x));
 		System.out.println("Valor de y: " + forma.format(y));
+		
+		ler.close();
+
 	}
 
 }

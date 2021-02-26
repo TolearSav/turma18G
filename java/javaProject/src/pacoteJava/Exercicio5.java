@@ -1,6 +1,5 @@
 package pacoteJava;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio5 {
@@ -8,7 +7,7 @@ public class Exercicio5 {
 	public static void main(String[] args) {
 		
 		Scanner ler = new Scanner(System.in);
-		DecimalFormat forma = new DecimalFormat("0.00");
+		
 		
 		double nota1, nota2, nota3, mediaFinal;
 
@@ -20,7 +19,10 @@ public class Exercicio5 {
 		nota3 = ler.nextDouble();
 
 		mediaFinal = (nota1 + nota2 + nota3) /3;
-		System.out.println("\nA média final é: " + forma.format(mediaFinal));
+		System.out.printf("\nA média final é: %.2f", mediaFinal);
+		
+		ler.close();
+
 
 	}
 }

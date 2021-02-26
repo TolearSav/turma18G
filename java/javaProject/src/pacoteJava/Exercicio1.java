@@ -20,6 +20,8 @@ public class Exercicio1 {
 		totalDias = idadeAnos*365 + meses*30 + dias;
 		
 		System.out.printf("Você tem %d",  totalDias, " dias de vida.");
+		
+		ler.close();
 
 	}
 

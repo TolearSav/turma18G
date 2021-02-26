@@ -20,7 +20,8 @@ public class Exercicio8 {
 	
 	
 		System.out.println("O custo ao consumidor é de: " + forma.format(custoAoConsumidor) + " reais.");
-	
+		
+		ler.close();
 		}
 
 }
