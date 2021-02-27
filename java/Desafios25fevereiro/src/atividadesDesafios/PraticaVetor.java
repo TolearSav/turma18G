@@ -8,12 +8,16 @@ public class PraticaVetor {
 		
 		Scanner ler = new Scanner(System.in);
 		int[] numeros = new int[7];
+		int totalPar = 0;
 		
-		for(numeros = 0; numeros <= 7; numeros++) {
-            System.out.print("Digite o "+(i + 1)+"º número: ");
-            numeros[7] = ler.nextInt();
+		for(int i = 0; i < 7; i++) {
+            System.out.println("Digite um número: ");
+            numeros[i] = ler.nextInt();
+            if(numeros[i] % 2 == 0) {
+            	totalPar++;
+            } 
         }
-
+		System.out.printf("Total de números pares: %d", totalPar);
 	}
 
 }

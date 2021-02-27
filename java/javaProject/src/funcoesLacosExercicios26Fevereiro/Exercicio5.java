@@ -1,27 +1,24 @@
-package funcoes;
+package funcoesLacosExercicios26Fevereiro;
 
 import java.util.Scanner;
 
-public class Exercicio6 {
+public class Exercicio5 {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		
-		int numero = 0; 
-		double media = 0.00; 
+		int numero = 1,  soma = 0;
 		
 		do
 		{
 			System.out.println("Digite um número: ");
 			numero = leia.nextInt();
-			if(numero % 3 == 0) {
-				media = (media + numero) / numero;
-			}
+			soma = soma + numero;
 		} 
 		while (numero != 0); {
-			System.out.printf("A média dos números é: %f", media);
+			System.out.printf("A soma dos números é: %d", soma);
 		}
-
+		leia.close();
 	}
 
 }
