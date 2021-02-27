@@ -13,22 +13,26 @@ public class Exercicio2 {
 			System.out.println("Digite o " + (contador+1) + "º número: ");
 			numeros[contador] = ler.nextInt();
 		}
+		
+		 for(int x = 0; x < 3; x++){	
 			for(int contador = 0; contador < 3; contador++) {
 				if ((contador + 1) < 3)
 				if(numeros[contador+1] < numeros[contador]) {
+					var aux = numeros[contador];
 					numeros[contador] = numeros[contador+1];
+					 numeros[contador + 1] = aux;
 				}
 			}
 			
 			for(int contador = 0; contador < 3; contador++) {
-			if(contador == (3)) {
-				System.out.print(numeros[contador]);
-			} else{
-				System.out.print(numeros[contador]);
-			}
+				if(contador == (3-1)) {
+					System.out.println(numeros[contador]);
+				} else{
+					System.out.print(numeros[contador]);
+				}
 				
-		}
-		
+			}
+		 }
 		
 
 	}

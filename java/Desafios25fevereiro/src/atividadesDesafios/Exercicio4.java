@@ -14,7 +14,7 @@ public class Exercicio4 {
 		numero = ler.nextInt();
 		
 		if(numero % 2 == 0) {
-			System.out.println("O número " + numero + " é par. E a raiz quadrada é " + Math.sqrt(numero));
+			System.out.printf("O número " + numero + " é par. E a raiz quadrada é " + Math.round(Math.sqrt(numero)));
 			
 		} else {
 			System.out.println("O número " + numero + " é impar. E sua elevação ao quadrado é " + Math.pow(numero, 2));
