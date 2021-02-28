@@ -1,4 +1,4 @@
-package funcoesLacosExercicios26Fevereiro;
+package Exercicios;
 
 public class Exercicio1 {
 

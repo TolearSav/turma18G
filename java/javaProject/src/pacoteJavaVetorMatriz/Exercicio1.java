@@ -8,12 +8,13 @@ public class Exercicio1 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		int pontuacao[5], maiorPontuacao;
+		int[] pontuacao = new int[5];
+		int maiorPontuacao = 0;
 				
 		for (int contador = 0; contador < 5; contador++) 
 		{
-			System.out.println"Insira a pontuação " + contador+1 + ": ");
-			pontuacao[contador] = ler.nextDouble();
+			System.out.println("Insira a pontuação " + contador+1 + ": ");
+			pontuacao[contador] = ler.nextInt();
 
 			if(pontuacao[contador] > maiorPontuacao); 
 			{
@@ -23,9 +24,9 @@ public class Exercicio1 {
 
 		for (int contador = 0; contador < 5; contador++)
 		{
-			System.out.println("Pontuação: ", pontuacao[contador]);
+			System.out.println("Pontuação: " + pontuacao[contador]);
 		}
-			System.out.println("A maior pontuação é: ", maiorPontuacao);
+			System.out.println("A maior pontuação é: "+ maiorPontuacao);
 
 	}
 
