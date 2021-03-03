@@ -12,7 +12,7 @@ public class Exercício1 {
 		int numero[] = new int[3];
 		
 		for(contador = 0; contador < 3; contador++){
-			System.out.println("Digite o " + (contador+1) +"o número:" );
+			System.out.println("Digite o " + (contador+1) +"º número:" );
 			numero[contador] = ler.nextInt();
 		
 			if(numero[contador] > maiorNumero) {

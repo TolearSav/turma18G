@@ -1,4 +1,4 @@
-package pacoteJavaVetorMatriz;
+package Arrays;
 
 import java.util.Scanner;
 
