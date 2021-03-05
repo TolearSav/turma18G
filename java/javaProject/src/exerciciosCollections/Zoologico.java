@@ -8,11 +8,11 @@ import java.util.ArrayList;
 public class Zoologico {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
 		
 		List<Animal> lista = new ArrayList<>();
 		
-		Locale.setDefault(Locale.US);
-		Scanner leia = new Scanner(System.in);
 		
 		System.out.print("Digite a quantidade de animais: ");
 		int quantidade = leia.nextInt();
@@ -28,11 +28,11 @@ public class Zoologico {
 			System.out.println("Idade: ");
 			int idade = leia.nextInt();
 				
-			if(opcao == 1) {
+			if(opcao == '1') {
 				lista.add(new Cachorro(nome, idade));
-			} else if(opcao == 2) {
+			} else if(opcao == '2') {
 				lista.add(new Cavalo(nome, idade));
-			} else if(opcao == 3) {
+			} else if(opcao == '3') {
 				lista.add(new Preguica(nome, idade));
 			}
 			
