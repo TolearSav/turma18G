@@ -8,7 +8,7 @@ public class Preguica extends Animal {
 
 	@Override
 	public void acao() {
-		System.out.println("Sobe àrvore");
+		System.out.println("Sobe em àrvore");
 	}
 	
 	@Override

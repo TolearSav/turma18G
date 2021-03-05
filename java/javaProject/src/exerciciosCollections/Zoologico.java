@@ -16,12 +16,21 @@ public class Zoologico {
 		
 		System.out.print("Digite a quantidade de animais: ");
 		int quantidade = leia.nextInt();
+		char opcao;
 		
 		for(int x = 1; x <= quantidade; x++) {
 			System.out.println("Animal "+x);
 			
-			System.out.println("Qual animal você quer? 1 - Cachorro. 2 - Cavalo. 3 - Preguiça");
-			int opcao = leia.next().charAt(0);
+			do {
+				System.out.println("Qual animal você quer? 1 - Cachorro. 2 - Cavalo. 3 - Preguiça");
+				opcao = leia.next().charAt(0);
+                
+                if(opcao != '1' && opcao != '2' && opcao != '3') {
+                	System.out.println("Opcao invalida!");
+                }
+            	
+            } while(opcao != '1' && opcao != '2' && opcao != '3');
+			
 			
 			System.out.println("Nome: ");
 			String nome = leia.next();
@@ -39,16 +48,14 @@ public class Zoologico {
 		}
 
 		System.out.println();
-		System.out.println("Animais escolhidos: ");
+		System.out.println("Lista de animais escolhidos: ");
 			for(Animal animal:lista) {
-				System.out.println(animal.getNome() + " tem " + animal.getIdade());
+				System.out.println(animal.getNome() + " tem " + animal.getIdade() + " anos. Seu som é: ");
 			
 				animal.emiteSom();
-			
+				System.out.println(animal.getNome()+":");
 				animal.acao();
 		}
-			
-		System.out.println("fim");
 
 	}
 
