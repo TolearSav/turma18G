@@ -8,11 +8,9 @@ import java.util.ArrayList;
 public class Zoologico {
 
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
 		
 		List<Animal> lista = new ArrayList<>();
-		
 		
 		System.out.print("Digite a quantidade de animais: ");
 		int quantidade = leia.nextInt();
